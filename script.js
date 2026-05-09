@@ -1,4 +1,4 @@
-const apiKey = "7278bdefd5584696960c15fccd92eb1c";
+const apiKey = "34c688a1fa17e26a2a16e12f3ea9b4c3";
 
 const newsContainer = document.getElementById("newsContainer");
 const loader = document.getElementById("loader");
