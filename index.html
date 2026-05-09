@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Global News</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <div class="logo">
+            <i class="fa-solid fa-newspaper"></i>
+            Global News
+        </div>
+
+        <div class="search-box">
+            <input type="text" id="searchInput" placeholder="Search news...">
+            <button onclick="searchNews()">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- FILTERS -->
+    <section class="filters">
+
+        <!-- CATEGORY -->
+        <select id="category">
+            <option value="">All Categories</option>
+            <option value="business">Business</option>
+            <option value="entertainment">Entertainment</option>
+            <option value="general">General</option>
+            <option value="health">Health</option>
+            <option value="science">Science</option>
+            <option value="sports">Sports</option>
+            <option value="technology">Technology</option>
+        </select>
+
+        <!-- COUNTRY -->
+        <select id="country">
+            <option value="us">USA</option>
+            <option value="ng">Nigeria</option>
+            <option value="gb">UK</option>
+            <option value="ca">Canada</option>
+            <option value="au">Australia</option>
+        </select>
+
+        <button onclick="getNews()">Load News</button>
+
+    </section>
+
+    <!-- LOADER -->
+    <div id="loader" class="loader">
+        Loading news...
+    </div>
+
+    <!-- NEWS CONTAINER -->
+    <section id="newsContainer" class="news-container">
+
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>© 2026 Global News</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
